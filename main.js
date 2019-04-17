@@ -5,7 +5,7 @@ const _ = require('lodash');
 // Enable live reload for all the files inside your project directory
 require('electron-reload')(__dirname);
 const { Products, Sales, Purchase } = require('./models');
-const sequelize = require('Sequelize');
+const sequelize = require('sequelize');
 const Op = sequelize.Op;
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.

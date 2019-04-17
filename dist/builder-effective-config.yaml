@@ -1,6 +1,9 @@
 directories:
   output: dist
   buildResources: build
+buildDependenciesFromSource: true
+nodeGypRebuild: false
+npmRebuild: false
 appId: com.electron.nirlom
 dmg:
   contents:

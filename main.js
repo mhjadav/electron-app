@@ -123,7 +123,7 @@ function createWindow () {
     // arg.forEach(async function(product){
     //   const response = await Products.create(product);       
     // })
-    Products.bulkCreate(product);
+    Products.bulkCreate(arg);
     
     mainWindow.webContents.send("response", 1);
     //knex('products').insert(products)
@@ -135,7 +135,7 @@ function createWindow () {
     // arg.forEach(async function(order){
     //   const response = await Sales.create(order);       
     // })
-    Sales.bulkCreate(order);
+    Sales.bulkCreate(arg);
     
     mainWindow.webContents.send("response", 1);
     //knex('products').insert(products)
@@ -147,7 +147,7 @@ function createWindow () {
     // arg.forEach(async function(order){
     //   const response = await Purchase.create(order);       
     // })
-    Purchase.bulkCreate(order);
+    Purchase.bulkCreate(arg);
     mainWindow.webContents.send("response", 1);
     //knex('products').insert(products)
   });
